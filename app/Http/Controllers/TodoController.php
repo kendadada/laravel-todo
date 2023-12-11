@@ -5,16 +5,17 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\todo;
 use Livewire\WithPagination;
+use Livewire\Componet;
 
 
 class TodoController extends Controller
 {
     //
-    use WithPagination;
-    public function index()
+    //use WithPagination;
+    public function todo_view()
     {
         $todo = Todo::all();
-        return view('index',['todos' => $todo]);
+        return view('todo_view-page',['todos' => $todo]);
     }
     public function todo_create()
     {
