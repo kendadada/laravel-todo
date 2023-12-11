@@ -1,9 +1,9 @@
 # laravel-todo
 practice laravel
 
-#overview
+# overview
 laravelの練習でToDoアプリ作成
 
-#library
+# library
 livewire
 ..他に練習になりそうなものがあれば追加していきたい。
