@@ -1,0 +1,4 @@
+172.26.0.1 - - [01/Dec/2023:12:00:40 +0000] "GET / HTTP/1.1" 404 27 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
+172.26.0.1 - - [01/Dec/2023:12:08:14 +0000] "GET / HTTP/1.1" 404 27 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
+172.26.0.1 - - [01/Dec/2023:12:08:15 +0000] "GET / HTTP/1.1" 404 27 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
+172.26.0.1 - - [01/Dec/2023:12:10:47 +0000] "GET / HTTP/1.1" 200 27551 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"

@@ -1,0 +1,43 @@
+version: '3'
+services:
+  l10dev-nginx:
+    container_name: "l10dev-nginx"
+    build:
+      context: ./docker/nginx
+    depends_on:
+      - l10dev-app
+    ports:
+      - 80:80
+    volumes:
+      - ./:/src
+
+  l10dev-app:
+    container_name: "l10dev-app"
+    build:
+      context: ./docker/php
+    depends_on:
+      - l10dev-mysql
+    volumes:
+      - ./:/src
+      - /src/node_modules
+      - /src/vendor
+      - ./docker/php/php.ini:/usr/local/etc/php/php.ini
+
+  l10dev-mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: sample
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      TZ: 'Asia/Tokyo'
+    volumes:
+      - ./docker/mariadb_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  l10dev-redis:
+    image: redis:alpine
+    container_name: "l10dev-redis"
+    ports:
+      - 16379:6379
