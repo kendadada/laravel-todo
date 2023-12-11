@@ -18,8 +18,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// home
+Route::get('/home', function () {
+    return view('index');
+});
+
 // 一覧
-Route::get('todo', [TodoController::class, 'index']);
+Route::get('/todo_view-page', [TodoController::class, 'todo_view']);
 
 //作成
 Route::post('/create', [TodoController::class, 'create']);
