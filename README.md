@@ -2,7 +2,7 @@
 practice laravel
 
 # overview
-laravelとgitの練習
+laravelとgitの練習<br>
 あまりgitを使ってこなかったためぎこちなさを既に感じでいる。
 
 # library
