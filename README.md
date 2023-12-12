@@ -5,11 +5,7 @@ practice laravel
 laravelとgitの練習  
 あまりgitを使ってこなかったためぎこちなさを既に感じている。
 
-# library
-  _._  
-/ /o\ \   || ()                ()  __  
-|_\ /_|   || || \\// /_\ \\ // || |~~ /_\  
- |`|`|    || ||  \/  \\_  \^/  || ||  \\_  
+# library  
 livewire  
 laravel ui  
 bootstrap  
