@@ -9,10 +9,13 @@
 
 </head>
 <body>
-<header>
+<div class="title m-b-md">
     <h1>Laravel practice</h1>
-</header>
-    <p>Laravel practiceだ。作ったものを反映していくよ。</p>
-    <a href="{{url('/todo_view-page')}}">ToDo</a>
+</div>
+
+    <div class="">
+        <p>Laravel practiceだ。作ったものを反映していくよ。</p>
+        <a href="{{url('/todo_view-page')}}">ToDo</a>
+    </div>
 </body>
 </html>
