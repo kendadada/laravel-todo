@@ -2,7 +2,8 @@
 practice laravel
 
 # overview
-laravelの練習でToDoアプリ作成
+laravelとgitの練習
+あまりgitを使ってこなかったためぎこちなさを既に感じでいる。
 
 # library
 livewire
