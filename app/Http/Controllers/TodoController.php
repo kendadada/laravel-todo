@@ -37,15 +37,23 @@ class TodoController extends Controller
         $todo->estimate_hour = $request->estimate_hour;
         $todo->save();
 
-        return redirect('/todo');
+        return redirect('/todo_view-page');
     }
     public function todo_update($id)
     {
         $todo = Todo::find($id);
         return view('todo_update-page', ["todo" => $todo]);
     }
-
-
+    public function update(Request $request)
+    {
+        Todo::find($request->id)->update([
+            'task_name' => $request->task_name,
+            'task_description' => $request->task_description,
+            'assing_person_name' => $request->assing_person_name,
+            'estimate_hour' => $request->estimate_hour,
+        ]);
+        return redirect('/todo_view-page');
+    }
     public function todo_delete($id)
     {
         $todo = Todo::find($id);
@@ -55,6 +63,6 @@ class TodoController extends Controller
     {
         $delete = Todo::find($request->id);
         $delete->delete();
-        return redirect('/todo');
+        return redirect('/todo_view-page');
     }
 }
