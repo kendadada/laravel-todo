@@ -15,4 +15,12 @@ bootstrap
 composer require jeroennoten/laravel-adminlte  
 php artisan adminlte:install  
 php artisan adminlte:install --only=auth_views  
-この辺りはdocker compose時に入れるのは後々。。
+この辺りはdocker compose時に入れるのは後々。。  
+
+Livewire page component layout view not found: [components.layouts.app]  
+上記のようなエラーに遭遇した。  
+調べてみるとLayout云々でエラーが出てるらしい。  
+そもそもそのファイルなくね？となり  
+php artisan livewire:publish --config  
+でconfig/livewire.phpを生成。reloadすると正常に表示された。  
+
