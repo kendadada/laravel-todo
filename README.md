@@ -9,7 +9,7 @@ laravelとgitの練習
 livewire  
 laravel ui  
 bootstrap  
-AdminLTE
+AdminLTE  
 ..他に練習になりそうなものがあれば追加していきたい。
 
 # memo  
