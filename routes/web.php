@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\TodoController;
+use App\Livewire\TodoCreate;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +14,40 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+// AdminLTE
+Route::get('/admin/login', function () {
+    return view('/auth/login');
+})
+    ->name('admin.login');
+//AdminLTE home
+Route::get('/admin/home', function () {
+    return view('/admin/home');
+})->name('admin.home');
+
+Route::get('/admin/view', function () {
+    return view('/admin/view');
+})->name('admin.view');
+
+Route::get('/admin/create', function () {
+    return view('/admin/create');
+})->name('admin.create');
+
+Route::get('/admin/create', TodoCreate::class)->name('todos.create');
+
+
+Route::get('/livewire/counter', function () {
+    return view('/livewire/counter');
+})->name('livewire.counter');
+
+// --- end AdminLTE ---
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route::get('/admin/view', function () {
+//     return view('welcome');
+// });
 
 // home
 Route::get('/home', function () {
