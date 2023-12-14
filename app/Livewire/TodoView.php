@@ -22,6 +22,7 @@ class TodoView extends Component
         });
         $todos = todo::find($id);
         $todos->delete();
+        return redirect('/admin/view');
     }
     public function render()
     {
