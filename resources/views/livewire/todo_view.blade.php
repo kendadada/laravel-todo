@@ -18,7 +18,7 @@
                 <p>{{$todo->assing_person_name}}</p>
                 <p>{{$todo->estimate_hour}}</p>
                 <button wire:click="">編集</button>
-                <button wire:click="dellTodo({{ $todo->id }})">削除</button>
+                <button onclick="confirm('削除しますか？') || event.stopImmediatePropagation()" wire:click="dellTodo({{ $todo->id }})">削除</button>
             </div>
             @endforeach
         </div>
