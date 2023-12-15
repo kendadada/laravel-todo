@@ -14,11 +14,25 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-// AdminLTE
+// // AdminLTE
+// Route::get('/admin/login', '\App\Http\Controllers\Admin\LoginController@authenticate'
+// )->name('admin.login');
+
 Route::get('/admin/login', function () {
     return view('/auth/login');
 })
     ->name('admin.login');
+//     Route::middleware(['auth:admin'])->group(function () {
+//         // ログイン認証が通ってない場合、URLで直接homeにアクセスしても画面が見れないように
+//         Route::get('/admin/home', function () {
+//             return view('/admin/home');
+//         })->name('admin.home');
+//     });
+//     Route::post(
+//         '/admin/logout',
+//         '\App\Http\Controllers\Admin\LoginController@logout'
+//     )->name('admin.logout');
+
 //AdminLTE home
 Route::get('/admin/home', function () {
     return view('/admin/home');
