@@ -24,4 +24,6 @@ Livewire page component layout view not found: [components.layouts.app]
 そもそもそのファイルなくね？となり  
 php artisan livewire:publish --config  
 でconfig/livewire.phpを生成。reloadすると正常に表示された。  
-
+admin_user_table  
+php artisan make:model Admin/AdminUser  
+php artisan make:controller Admin/LoginController  
