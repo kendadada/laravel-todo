@@ -27,3 +27,13 @@ php artisan livewire:publish --config
 admin_user_table  
 php artisan make:model Admin/AdminUser  
 php artisan make:controller Admin/LoginController  
+
+# 参考記事
+dockerからlaravel立ち上げまで  
+https://qiita.com/hitotch/items/869070c3a9f474a358ea  
+
+livewire  
+https://reffect.co.jp/laravel/laravel-livewire  
+
+AdminLTE  
+https://zenn.dev/egstock_inc/articles/6d07a13bdc59a3
